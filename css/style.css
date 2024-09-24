@@ -1,0 +1,502 @@
+/* General styling */
+.nav-head-sec {
+    border-top: 1px solid #323232;
+    border-bottom: 1px solid #525252;
+}
+
+.nav-head-sec .loc-text {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 10px 8px 5px;
+}
+
+.nav-head-sec .loc {
+    padding: 8px 0px 8px 10px;
+}
+
+.set-loc button {
+    padding: 8px 10px !important;
+    border-radius: 20px !important;
+    font-weight: 600;
+    font-size: 12px;
+    border: none;
+}
+.nav-sec {
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 40px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.nav-sec .nav-first {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.nav-sec .nav-second {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.nav-sec .nav-second .sign-in {
+    border-right: 1px solid #000;
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.nav-sec .cart {
+    width: 50px;
+}
+.top-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 15px 12px 15px;
+    color: #fff;
+    background: #202124;
+    font-weight: 600;
+    font-size: 16px;
+    gap: 10px;
+}
+.top-sec .order-btn button {
+    padding: 15px 35px 15px 35px;
+    background: #e4002b;
+    border: 0;
+    border-radius: 25px;
+    color: #fff;
+}
+.top-sec .text {
+    font-size: 14px;
+}
+
+.category-head {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+.category-head .head .browse {
+    margin-right: 31px;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 8px;
+    margin-bottom: 55px;
+}
+.category-head .horizontal-line {
+    border-top: 2px solid #c8c7c7;
+    width: 850px;
+    margin-top: 15px;
+}
+.cat-first-sec {
+    margin: 22px 40px 10px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cat-first-sec .card {
+    border-radius: 5px;
+    background: #f6f4f4;
+}
+.cat-first-sec .card .item .text {
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    letter-spacing: -0.5px;
+}
+.cat-first-sec .card .item .view-all {
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    letter-spacing: -0.5px;
+    color: #3b3b3b;
+}
+.cat-first-sec .card .item .card-img {
+    object-fit: cover;
+    width: 100%; /* Make sure the image covers the card width */
+    height: 15vw; /* Set height relative to viewport width for large screens */
+    border-radius: 5px 5px 0px 0px;
+}
+
+.line {
+    display: flex;
+    gap: 15px;
+}
+
+.line .first-line,
+.line .second-line,
+.line .third-line {
+    width: 16px;
+    height: 51px;
+    background: rgb(228, 0, 43);
+}
+
+.head {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.view-all {
+    font-size: small;
+}
+.explorer {
+    position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3); /* Button background */
+    border: none;
+    padding: 0px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.carousel-control-prev {
+    left: -30px;
+}
+
+.carousel-control-next {
+    right: -30px; /* Adjust position to the right of the cards */
+}
+
+/* Hover effect for buttons */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.card-new .item .card-img {
+    width: 22vw;
+    height: 15.18519vw;
+    border-radius: 5px 5px 0px 0px;
+}
+.card-new {
+    width: 22vw;
+    border-radius: 5px;
+    background: #f6f4f4;
+}
+.card-new .item .text {
+    color: #e4002b;
+    font-size: 30px;
+    height: 43px;
+    font-weight: 600;
+    text-align: center;
+}
+.card-new .item p {
+    color: #000000;
+    font-size: 14px;
+    /* padding: 5px; */
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.offer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.offer div a {
+    font-size: 14px;
+    color: #000000;
+}
+.offer div button {
+    padding: 10px 30px 10px 30px;
+    border-radius: 25px;
+}
+/* Breakpoints for responsive behavior */
+@media (max-width: 1200px) {
+    .item4 {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .item3 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .item2,
+    .item3 {
+        display: none; /* Hide 2nd and 3rd cards for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .item2 {
+        display: none; /* Hide 2nd and 3rd cards for smaller screens */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+}
+
+/* For smaller devices, use a fixed height */
+@media (max-width: 768px) {
+    .cat-first-sec .card .item .card-img {
+        height: 200px; /* Fixed height for smaller devices */
+    }
+    .head h2 {
+        font-size: 20px;
+    }
+    .view-all {
+        font-size: 14px;
+    }
+    .exclusive-offer {
+        background: #1d1d1d;
+        color: #fff;
+        padding: 0px 20px 20px 0px;
+    }
+}
+/* Adjust sizes for smaller screens but ensure everything stays in one row */
+@media (max-width: 576px) {
+    .nav-head-sec {
+        padding: 5px;
+    }
+
+    .nav-head-sec .loc,
+    .nav-head-sec .loc-text,
+    .nav-head-sec .set-loc button {
+        font-size: 12px;
+        padding: 5px; /* Reduce padding */
+    }
+
+    .nav-head-sec svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    /* Make sure the flex items don't wrap */
+    .nav-head-sec {
+        flex-wrap: nowrap;
+    }
+
+    /* Reduce margins for mobile */
+    .nav-head-sec .loc,
+    .nav-head-sec .loc-text {
+        margin-right: 5px;
+    }
+
+    .nav-head-sec .set-loc button {
+        padding: 8px 10px 8px 10px;
+        background: #000;
+        color: #fff;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
+@media (max-width: 320px) {
+    .nav-head-sec .set-loc button {
+        padding: 8px 10px 8px 10px;
+        background: #000;
+        color: #fff;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 8px;
+    }
+}
+@media (min-width: 768px) {
+    .category-sec {
+        margin-left: 120px;
+        margin-bottom: 50px;
+    }
+    .exclusive-offer {
+        background: #1d1d1d;
+        color: #fff;
+        padding: 0px 20px 20px 200px;
+    }
+    .banner-sec {
+        width: 100%;
+        height: 450px;
+        background-image: url("../images/banner.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .nav-sec .menu-list {
+        display: none;
+    }
+    .head .offer {
+        text-align: left;
+    }
+}
+@media (max-width: 768px) {
+    .category-sec {
+        margin-left: 10px;
+        margin-bottom: 50px;
+    }
+    .banner-sec {
+        width: 100%;
+        height: 100vh;
+        background-image: url("../images/App_750x634px.webp");
+        background-size: cover;
+        background-position: center;
+    }
+    .nav-sec .menu-list {
+        display: block;
+    }
+    .nav-sec .nav-first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-sec {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-first .menu {
+        display: none;
+    }
+    .nav-first .deals {
+        display: none;
+    }
+    .nav-second .sign-in {
+        display: none;
+    }
+    .acc-icon {
+        display: none;
+    }
+    .nav-first {
+        width: 100%; /* Full width */
+        text-align: center; /* Center text */
+    }
+
+    .nav-img {
+        margin-bottom: 10px; /* Space below the logo */
+    }
+
+    .menu,
+    .deals {
+        display: block; /* Ensure menu items are stacked */
+        margin: 5px 0; /* Space between items */
+    }
+
+    .acc-icon {
+        margin: 0 auto; /* Center the account icon */
+    }
+    .copy {
+        width: 100%;
+    }
+}
+.footer {
+    display: flex;
+    justify-content: left;
+    margin-right: 0px 50px 0px 50px;
+    gap: 50px;
+}
+.footer ul {
+    list-style: none;
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+}
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: small;
+}
+.footer ul li {
+    padding: 5px;
+}
+.footer .foot-head {
+    padding: 5px;
+    font-size: 14px;
+}
+.footer .foot-text {
+    display: flex;
+    gap: 5px;
+}
+.find-kfc {
+    display: flex;
+    gap: 5px;
+}
+.find-kfc a {
+    text-decoration: underline;
+}
+.find-kfc .loc {
+    margin-top: 2px;
+}
+.play-store {
+    display: flex;
+    gap: 20px;
+}
+.copy-right {
+    margin: 100px 150px 0px 0px;
+
+    justify-content: space-between;
+}
+.copy {
+    font-size: 12px;
+}
+.blank {
+    margin-left: 4%;
+}
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+.social-media div {
+    padding: 10px 12px 10px 12px;
+    background: #181818;
+    border-radius: 50%;
+    border: 1px solid #5d5d5d;
+}
+.accordion-item {
+    background-color: black; /* Background color for each accordion item */
+    border: none; /* Remove default borders */
+}
+
+.accordion-button {
+    background-color: black; /* Background color for the button */
+    color: white; /* Text color */
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: black; /* Background when expanded */
+    color: white;
+}
+
+.accordion-body {
+    background-color: black; /* Background for the body */
+    color: white; /* Text color inside body */
+}
+
+.accordion-button:focus {
+    box-shadow: none; /* Remove button focus outline */
+}
+
+.accordion-button:hover {
+    background-color: #333; /* Optional hover effect */
+}
+
+.accordion-header {
+    border-bottom: 1px solid white; /* Optional: Add a bottom border between items */
+}
+
+.accordion-item:last-child .accordion-header {
+    border-bottom: none; /* Remove border for last item */
+}
+
+ul li a {
+    color: white; /* Ensure links are white inside the accordion */
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Optional hover effect for links */
+}
