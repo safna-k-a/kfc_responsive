@@ -231,13 +231,13 @@
 @media (max-width: 768px) {
     .item2,
     .item3 {
-        display: none; /* Hide 2nd and 3rd cards for smaller screens */
+        display: none;
     }
 }
 
 @media (max-width: 576px) {
     .item2 {
-        display: none; /* Hide 2nd and 3rd cards for smaller screens */
+        display: none;
     }
 }
 
@@ -248,7 +248,7 @@
 /* For smaller devices, use a fixed height */
 @media (max-width: 768px) {
     .cat-first-sec .card .item .card-img {
-        height: 200px; /* Fixed height for smaller devices */
+        height: 200px;
     }
     .head h2 {
         font-size: 20px;
@@ -259,11 +259,28 @@
     .exclusive-offer {
         background: #1d1d1d;
         color: #fff;
-        padding: 0px 20px 20px 0px;
+        padding: 0px 0px 20px 0px;
+    }
+}
+@media (min-width: 576px) {
+    .banner-sec {
+        width: 100%;
+        height: 250px;
+        background-image: url("../images/banner.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
 /* Adjust sizes for smaller screens but ensure everything stays in one row */
 @media (max-width: 576px) {
+    .banner-sec {
+        width: 100%;
+        height: 250px;
+        background-image: url("../images/App_750x634px.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     .nav-head-sec {
         padding: 5px;
     }
@@ -311,6 +328,15 @@
     }
 }
 @media (min-width: 768px) {
+    .footer .foot-text {
+        display: block;
+        display: flex;
+        gap: 10px;
+    }
+
+    #accordionExample {
+        display: none;
+    }
     .category-sec {
         margin-left: 120px;
         margin-bottom: 50px;
@@ -322,7 +348,7 @@
     }
     .banner-sec {
         width: 100%;
-        height: 450px;
+        height: 400px;
         background-image: url("../images/banner.webp");
         background-size: contain;
         background-repeat: no-repeat;
@@ -335,17 +361,20 @@
     }
 }
 @media (max-width: 768px) {
+    .category-head {
+        margin-top: 37px;
+    }
+    .footer .foot-text {
+        display: none;
+    }
+    #accordionExample {
+        display: block;
+    }
     .category-sec {
         margin-left: 10px;
         margin-bottom: 50px;
     }
-    .banner-sec {
-        width: 100%;
-        height: 100vh;
-        background-image: url("../images/App_750x634px.webp");
-        background-size: cover;
-        background-position: center;
-    }
+
     .nav-sec .menu-list {
         display: block;
     }
@@ -372,37 +401,34 @@
         display: none;
     }
     .nav-first {
-        width: 100%; /* Full width */
-        text-align: center; /* Center text */
+        width: 100%;
+        text-align: center;
     }
 
     .nav-img {
-        margin-bottom: 10px; /* Space below the logo */
+        margin-bottom: 10px;
     }
 
     .menu,
     .deals {
-        display: block; /* Ensure menu items are stacked */
-        margin: 5px 0; /* Space between items */
+        display: block;
+        margin: 5px 0;
     }
 
     .acc-icon {
-        margin: 0 auto; /* Center the account icon */
+        margin: 0 auto;
     }
     .copy {
         width: 100%;
     }
 }
 .footer {
-    display: flex;
-    justify-content: left;
-    margin-right: 0px 50px 0px 50px;
-    gap: 50px;
+    margin-top: 20px;
+    justify-content: start;
+    gap: 40px;
 }
 .footer ul {
     list-style: none;
-    margin: 0px 0px 0px 0px !important;
-    padding: 0px 0px 0px 0px !important;
 }
 .footer a {
     text-decoration: none;
@@ -416,10 +442,7 @@
     padding: 5px;
     font-size: 14px;
 }
-.footer .foot-text {
-    display: flex;
-    gap: 5px;
-}
+
 .find-kfc {
     display: flex;
     gap: 5px;
@@ -434,8 +457,11 @@
     display: flex;
     gap: 20px;
 }
+.play-store img {
+    width: 100%;
+}
 .copy-right {
-    margin: 100px 150px 0px 0px;
+    margin: 0px 0px 0px 0px;
 
     justify-content: space-between;
 }
@@ -450,53 +476,53 @@
     gap: 10px;
 }
 .social-media div {
-    padding: 10px 12px 10px 12px;
+    padding: 8px 12px 8px 12px;
     background: #181818;
     border-radius: 50%;
     border: 1px solid #5d5d5d;
 }
 .accordion-item {
-    background-color: black; /* Background color for each accordion item */
-    border: none; /* Remove default borders */
+    background-color: black;
+    border: none;
 }
 
 .accordion-button {
-    background-color: black; /* Background color for the button */
-    color: white; /* Text color */
+    background-color: black;
+    color: white;
     border: none;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: black; /* Background when expanded */
+    background-color: black;
     color: white;
 }
 
 .accordion-body {
-    background-color: black; /* Background for the body */
-    color: white; /* Text color inside body */
+    background-color: black;
+    color: white;
 }
 
 .accordion-button:focus {
-    box-shadow: none; /* Remove button focus outline */
+    box-shadow: none;
 }
 
 .accordion-button:hover {
-    background-color: #333; /* Optional hover effect */
+    background-color: #333;
 }
 
 .accordion-header {
-    border-bottom: 1px solid white; /* Optional: Add a bottom border between items */
+    border-bottom: 1px solid white;
 }
 
 .accordion-item:last-child .accordion-header {
-    border-bottom: none; /* Remove border for last item */
+    border-bottom: none;
 }
 
 ul li a {
-    color: white; /* Ensure links are white inside the accordion */
+    color: white;
     text-decoration: none;
 }
 
 ul li a:hover {
-    text-decoration: underline; /* Optional hover effect for links */
+    text-decoration: underline;
 }
