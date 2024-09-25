@@ -350,7 +350,7 @@
         width: 100%;
         height: 400px;
         background-image: url("../images/banner.webp");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
     .nav-sec .menu-list {
